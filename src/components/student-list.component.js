@@ -31,12 +31,10 @@ export default class StudentList extends Component {
     });
   };
 
-
-
   render() {
     return (
       <div className="table-wrapper">
-          <h1>Student List</h1>
+        <h1>Student List</h1>
         <Table striped bordered hover>
           <thead>
             <tr>

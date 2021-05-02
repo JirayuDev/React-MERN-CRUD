@@ -58,14 +58,12 @@ export default class EditStudent extends Component {
       .then((res) => {
         console.log(res.data);
         console.log(`student successfully updated`);
+        // Redirect to  student list
+        this.props.history.push("/student-list");
       })
       .catch((error) => {
         console.log(error);
       });
-
-    // Redirect to  student list
-    this.props.history.push("/student-list");
-    window.location.reload();
   };
 
   render() {
